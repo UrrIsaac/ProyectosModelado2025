@@ -1,50 +1,165 @@
+/* Estilos Base */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background-color: #f5f7fa;
     color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #2c3e50; /* Color oscuro para el encabezado */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 25px;
 }
 
 h1 {
-    text-align: center;
-    color: #2c3e50;
+    margin: 0;
+    font-size: 2em;
 }
 
+h2 {
+    border-bottom: 1px solid #bdc3c7; /* Línea separadora  */
+    padding-bottom: 5px;
+    margin-top: 30px;
+    color: #34495e;
+}
+
+/* Contenedores */
+#pendientes, #completadas, .vacio {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.lista-tareas {
+    display: block;
+}
+
+/* Estilos de la Tarea Individual */
 .tarea {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Sombra sutil */
     padding: 15px 20px;
-    margin: 15px auto;
-    max-width: 600px;
+    margin-bottom: 15px; /* Separación vertical */
     position: relative;
-    transition: transform 0.2s ease-in-out;
+    transition: background-color 0.1s; /* Transición muy simple */
 }
 
 .tarea:hover {
-    transform: scale(1.01);
+    background-color: #f9f9f9; /* Cambio de color simple al pasar el mouse */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra de hover */
 }
 
 .tarea.completada {
-    background-color: #e8f6e8;
-    border-left: 6px solid #2ecc71;
+    background-color: #e8f6e8; 
+    border-left: 5px solid #2ecc71; /* Verde */
+    opacity: 0.9;
 }
 
 .tarea.pendiente {
-    border-left: 6px solid #e67e22;
+    border-left: 5px solid #e67e22; /* Naranja/Ámbar */
 }
 
-.estado {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 1.5em;
+/* Estilos internos de la tarea */
+.header-tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
+.titulo {
+    font-size: 1.1em;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.prioridad {
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: normal; 
+    font-size: 0.75em;
+    color: white;
+}
+/* Colores de Prioridad */
+.p-5 { background-color: #c0392b; }
+.p-4 { background-color: #e67e22; }
+.p-3 { background-color: #3498db; }
+.p-2 { background-color: #2ecc71; }
+.p-1 { background-color: #95a5a6; }
+
+.cuerpo-tarea p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+.descripcion {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+}
+
+.estado-final {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-weight: normal;
+    color: #7f8c8d;
+    font-size: 0.8em;
+}
+
+
+/* Estilos de Mensajes Simples */
+
+/* Mensaje principal cuando la agenda está vacía */
 .vacio {
     text-align: center;
-    font-style: italic;
-    color: #777;
+    padding: 30px 20px; 
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    margin-top: 30px;
+    color: #7f8c8d;
 }
 
+.vacio h2 {
+    color: #34495e;
+    font-size: 1.4em; 
+    border: none;
+    margin-bottom: 8px;
+}
+
+.vacio p {
+    font-size: 1em;
+}
+
+/* Mensaje cuando una subsección está vacía */
+.mensaje-seccion {
+    text-align: center;
+    padding: 15px; 
+    background-color: #fff8e1; /* Fondo clarito */
+    border: 1px solid #fbeed5;
+    border-radius: 6px;
+    color: #9c7b39; 
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+    font-size: 0.8em;
+    border-top: 1px solid #ddd;
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "T-0001",
+    "titulo": "Reunión de planificación trimestral",
+    "prioridad": 4,
+    "fecha": "2026-01-05",
+    "etiquetas": [
+      "trabajo",
+      "gestion"
+    ],
+    "descripcion": "",
+    "completada": false
+  },
+  {
+    "id": "T-0002",
+    "titulo": "Pagar renta y servicios",
+    "prioridad": 5,
+    "fecha": "2025-11-01",
+    "etiquetas": [
+      "finanzas",
+      "hogar",
+      "urgente"
+    ],
+    "descripcion": "",
+    "completada": false
+  },
+  {
+    "id": "T-0003",
+    "titulo": "Leer capítulo 3 del libro de Python",
+    "prioridad": 2,
+    "fecha": "2025-10-20",
+    "etiquetas": [
+      "estudio",
+      "desarrollo"
+    ],
+    "descripcion": "",
+    "completada": false
+  },
+  {
+    "id": "T-0004",
+    "titulo": "Agendar cita con el dentista",
+    "prioridad": 3,
+    "fecha": "2025-10-15",
+    "etiquetas": [
+      "salud"
+    ],
+    "descripcion": "",
+    "completada": false
+  },
+  {
+    "id": "T-0005",
+    "titulo": "Buscar regalos de Navidad",
+    "prioridad": 1,
+    "fecha": "2025-12-10",
+    "etiquetas": [
+      "ocio",
+      "compras"
+    ],
+    "descripcion": "",
+    "completada": false
+  },
+  {
+    "id": "T-0006",
+    "titulo": "Enviar informe final de proyecto X",
+    "prioridad": 5,
+    "fecha": "2025-10-16",
+    "etiquetas": [
+      "trabajo",
+      "deadline"
+    ],
+    "descripcion": "",
+    "completada": false
+  },
+  {
+    "id": "T-0007",
+    "titulo": "Limpieza profunda de la cocina",
+    "prioridad": 3,
+    "fecha": "2025-10-22",
+    "etiquetas": [
+      "hogar",
+      "limpieza"
+    ],
+    "descripcion": "",
+    "completada": false
+  },
+  {
+    "id": "T-0008",
+    "titulo": "Ver la nueva serie recomendada",
+    "prioridad": 1,
+    "fecha": "2025-11-30",
+    "etiquetas": [
+      "ocio",
+      "entretenimiento"
+    ],
+    "descripcion": "",
+    "completada": false
+  },
+  {
+    "id": "T-0009",
+    "titulo": "Reparar bicicleta (cambio de llanta)",
+    "prioridad": 2,
+    "fecha": "2025-10-28",
+    "etiquetas": [
+      "personal",
+      "mantenimiento"
+    ],
+    "descripcion": "",
+    "completada": false
+  }
+]
